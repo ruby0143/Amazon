@@ -14,10 +14,15 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     }
 
     return (
-        <div className='checkoutProduct'>
-            <img className='checkoutProduct__image' src={image} />
+        <div className='checkoutProduct row'>
+            <div className='col-lg-4'>
 
-            <div className='checkoutProduct__info'>
+            <img className='checkoutProduct__image' src={image} />
+            </div>
+
+            <div className='col-lg-8'>
+
+            <div className='checkoutProduct__info col-sm-8'>
                 <p className='checkoutProduct__title'>{title}</p>
                 <p className="checkoutProduct__price">
                     <small>$</small>
@@ -33,6 +38,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                 {!hideButton && (
                     <button class="checkoutProduct__button" onClick={removeFromBasket}>Remove from Basket</button>
                 )}
+            </div>
             </div>
         </div>
     )

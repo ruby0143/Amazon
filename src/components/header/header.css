@@ -1,18 +1,13 @@
 .header {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #131921;
     position: sticky;
-    top: 0;
-    z-index: 100;
   }
   
   .header__logo {
     width: 100px;
     object-fit: contain;
     margin: 0 20px;
-    margin-top: 18px;
+    margin-top: 14px;
+    height: 30px;
   }
   
   .header__search {
@@ -23,15 +18,16 @@
   }
   
   .header__searchInput {
-    height: 12px;
+    height: 28px;
     padding: 10px;
     border: none;
-    width: 100%;
+    width: 90%;
   }
   
   .header__searchIcon {
-    padding: 5px;
-    height: 22px !important;
+    padding: 2px;
+    width: 30px;
+    height: 28px !important;
     background-color: #cd9042;
     color: black;
   }
@@ -41,19 +37,23 @@
   }
   
   .header__optionLineTwo {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
+    margin: 10px;
+    margin-top: 13px;
   }
   
   .header__optionBasket {
     display: flex;
     align-items: center;
     color: white;
+    margin-right: 20px;
+    height: 20px;
   }
   
   .header__basketCount {
-    margin-left: 10px;
-    margin-right: 10px;
+
+    margin-right: 5px;
   }
   
   .header__nav {
@@ -67,4 +67,51 @@
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+  }
+
+  .toggler{
+    margin-left: 15px;
+  }
+
+  .m4{
+    margin: 9px;
+  }
+
+  .white{
+    color: white;
+  }
+
+  body{
+    text-decoration: none;
+  }
+  .toggler{
+    display: none;
+  }
+
+  @media screen and (max-width : 800px) {
+    .search_nav{
+      display: none;
+    }
+    .header__logo{
+      width: 60%;
+      margin: 2 8px;
+    }
+
+    .header__searchInput{
+      width: 250px;
+    }
+    .header__searchIcon{
+      width: 30px;
+    }
+
+    .header__optionBasket{
+      margin-right: 0;
+      margin-left: 50px;
+    }
+    .header__basketCount{
+      margin-right: 0px;
+    }
+    .toggler{
+      display:flex
+    }
   }
